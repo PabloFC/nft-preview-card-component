@@ -4,14 +4,21 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 18px;
+}
+
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
 .card {
-  max-width: 300px;
-  max-height: 500px;
+  max-width: 375px;
   border: 1px solid black;
+  border-radius: 12px;
   padding: 12px;
 }
 
@@ -23,7 +30,44 @@ img {
   border-radius: 12px;
 }
 
+.card-body {
+  padding: 4px;
+}
+
 .info {
   display: flex;
   justify-content: space-between;
+}
+
+.subinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.svg {
+  width: 16px;
+  height: 16px;
+}
+
+.author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  padding-right: 12px;
+}
+
+.title,
+.subtitle,
+.info {
+  padding-bottom: 12px;
+}
+
+.author {
+  padding-top: 12px;
 }
